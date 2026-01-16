@@ -1,0 +1,18 @@
+{
+    "problems": {
+        "1": {
+            "title": "CF_1955A_Yogurt_Sale",
+            "slug": "CF_1955A_Yogurt_Sale",
+            "platform": "CodeForces",
+            "difficulty": "Easy",
+            "tags": ["maths", "formula based"],
+            "solutions": [
+                {
+                    "language": "python",
+                    "path": "solutions\\codeforces\\CF_1955A_Yogurt_Sale.py",
+                    "date": "2026-01-16T23:17:49.024379"
+                }
+            ]
+        }
+    }
+}
