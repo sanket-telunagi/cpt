@@ -1,18 +1,1 @@
-{
-    "problems": {
-        "1": {
-            "title": "CF_1955A_Yogurt_Sale",
-            "slug": "CF_1955A_Yogurt_Sale",
-            "platform": "CodeForces",
-            "difficulty": "Easy",
-            "tags": ["maths", "formula based"],
-            "solutions": [
-                {
-                    "language": "python",
-                    "path": "solutions\\codeforces\\CF_1955A_Yogurt_Sale.py",
-                    "date": "2026-01-16T23:17:49.024379"
-                }
-            ]
-        }
-    }
-}
+{"problems": {"1": {"title": "CF_1955A_Yogurt_Sale", "slug": "CF_1955A_Yogurt_Sale", "platform": "CodeForces", "difficulty": "Easy", "tags": ["maths", "formula based"], "solutions": [{"language": "python", "path": "solutions\\codeforces\\CF_1955A_Yogurt_Sale.py", "date": "2026-01-16T23:17:49.024379"}]}, "2": {"title": "LC_3047_Find_The_Largest_Area_Of_Square_Inside_Two_Rectangles", "slug": "LC_3047_Find_The_Largest_Area_Of_Square_Inside_Two_Rectangles", "platform": "LeetCode", "difficulty": "Medium", "tags": ["compuational geometry"], "solutions": [{"language": "python", "path": "solutions\\leetcode\\LC_3047_Find_The_Largest_Area_Of_Square_Inside_Two_Rectangles.py", "date": "2026-01-17T19:33:16.543627"}]}}}
