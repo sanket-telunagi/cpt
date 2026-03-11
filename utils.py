@@ -53,6 +53,15 @@ COMMENT_PREFIXES = {
     "php": "//",
 }
 
+PLATFORM_FILE_PREFIX = {
+    "leetcode": "LC",
+    "codechef": "CC",
+    "codeforces": "CF",
+    "hackerearth": "HE",
+    "harckerrank": "HR",
+    "undefined": "UD",
+}
+
 
 def normalize_language(language: str) -> str:
     """Normalize language name to lowercase for consistent matching."""
@@ -74,3 +83,10 @@ def get_comment_prefix(language: str) -> str:
 def get_difficulty_color(difficulty: str) -> str:
     """Get color code for difficulty level."""
     return DIFFICULTY_COLORS.get(difficulty, "white")
+
+
+def get_platform_file_prefix(platform: str) -> str:
+    """Get the platform file prefix to prefix before the file name
+    Return Undefined if platform not listed
+    """
+    return PLATFORM_FILE_PREFIX.get(platform, "UD")
