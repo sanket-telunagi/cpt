@@ -3,6 +3,9 @@
 # Date: 2026-05-16
 #
 
+from typing import List
+
+
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         return min(nums)
