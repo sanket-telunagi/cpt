@@ -5,18 +5,36 @@
 from typing import List
 
 
+# class Solution:
+#     def canReach(self, arr: List[int], start: int) -> bool:
+#         seen = set()
+#         n = len(arr)
+
+#         def _rec(i):
+#             if i < 0 or i >= n or i in seen:
+#                 return False
+#             if arr[i] == 0:
+#                 return True
+#             seen.add(i)
+
+#             return _rec(i + arr[i]) or _rec(i - arr[i])
+
+#         return _rec(start)
+
+
 class Solution:
     def canReach(self, arr: List[int], start: int) -> bool:
-        seen = set()
         n = len(arr)
 
         def _rec(i):
-            if i < 0 or i >= n or i in seen:
+
+            if i < 0 or i >= n or arr[i] == -1:
                 return False
             if arr[i] == 0:
                 return True
-            seen.add(i)
+            jump = arr[i]
+            arr[i] = -1
 
-            return _rec(i + arr[i]) or _rec(i - arr[i])
+            return _rec(i + jump) or _rec(i - jump)
 
         return _rec(start)
