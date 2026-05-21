@@ -8,14 +8,17 @@ from typing import List
 
 class Solution:
     def longestCommonPrefix(self, arr1: List[int], arr2: List[int]) -> int:
-        arr1.sort()
-        arr2.sort()
+
+        # use as hash table
         hash = set(arr1)
+
+        # add more cases with individual elements as well
         for num in arr1:
             while num > 0:
                 hash.add(num)
                 num //= 10
 
+        # get the length of digits
         def getDigits(num):
             res = 0
             while num > 0:
@@ -23,6 +26,7 @@ class Solution:
                 res += 1
             return res
 
+        # final result
         res = 0
         for num in arr2:
             # print(getDigits(num))
