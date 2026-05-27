@@ -3,7 +3,7 @@
 # Date: 2026-05-26
 #
 
-
+# approach 1
 class Solution:
     def numberOfSpecialChars(self, word: str) -> int:
         hash = set(list(word))
