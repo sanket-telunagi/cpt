@@ -3,6 +3,7 @@
 # Date: 2026-07-28
 #
 
+
 class Solution:
     def smallestPalindrome(self, s: str) -> str:
         string_length = len(s)
