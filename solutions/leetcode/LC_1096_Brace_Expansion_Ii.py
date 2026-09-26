@@ -13,16 +13,16 @@ class Solution:
             if ch.isalpha():
                 builder = [word + ch for word in builder]
 
-            elif ch == '{':
+            elif ch == "{":
                 drawer.append((result_box, builder))
                 result_box = []
                 builder = [""]
 
-            elif ch == ',':
+            elif ch == ",":
                 result_box.extend(builder)
                 builder = [""]
 
-            elif ch == '}':
+            elif ch == "}":
                 inner_result = result_box + builder
 
                 prev_result_box, prev_builder = drawer.pop()
