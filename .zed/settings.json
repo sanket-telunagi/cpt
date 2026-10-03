@@ -9,13 +9,14 @@
       ],
       "format_on_save": "on",
       "formatter": {
-        "language_server": {
-          "name": "ruff"
+        "external": {
+          "command": "ruff",
+          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
         }
       },
-      "code_actions_on_save": {
-        "source.organizeImports": true,
-        "source.fixAll": true
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
+        "source.fixAll.ruff": true
       }
     }
   }
