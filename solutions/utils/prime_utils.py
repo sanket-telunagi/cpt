@@ -3,8 +3,8 @@
 # Date: 2026-01-18
 #
 
-import random
 import math
+import random
 
 
 def is_prime(n):
@@ -107,7 +107,6 @@ def get_distinct_prime_factors_by_pollard_method(n):
         return {n}  # Use the Miller-Rabin test from previous answer
 
     factors = set()
-    temp = n
 
     def find_factors(num):
         if num == 1:
@@ -125,4 +124,4 @@ def get_distinct_prime_factors_by_pollard_method(n):
         find_factors(num // d)
 
     find_factors(n)
-    return sorted(list(factors))
+    return sorted(factors)
