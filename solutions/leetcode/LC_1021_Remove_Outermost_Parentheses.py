@@ -9,13 +9,12 @@ class Solution:
         res = ""
         nesting = 0
 
-        for ch in s :
-            if ch == ')' :
+        for ch in s:
+            if ch == ")":
                 nesting -= 1
-            if nesting > 0 :
+            if nesting > 0:
                 res = res + ch
-            if ch == '(' :
+            if ch == "(":
                 nesting += 1
 
         return res
-s
