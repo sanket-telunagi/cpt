@@ -28,3 +28,6 @@ class Solution:
             longest_decreasing = max(longest_decreasing, longest_decreasing_curr)
 
         return max(longest_increasing, longest_decreasing)
+        
+        
+        
