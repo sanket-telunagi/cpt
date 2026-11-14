@@ -30,4 +30,3 @@ class Solution:
         return max(longest_increasing, longest_decreasing)
         
         
-        
